@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(229, 229, 229);
+}
+
+#field {
+    display: grid;
+    border: 1px solid black;
+}
+
+#field div {
+    border: 1px solid black;
+}
+
+.box-colored {
+    background-color: rgb(76, 116, 17);
+}
+
+.next {
+    background-color: rgb(40, 93, 139);
+    animation: blinking 1s infinite ease-in-out;
+}
+
+@keyframes blinking {
+    0% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: rgb(40, 93, 139);
+    }
+    100% {
+        background-color: white
+    }
+}
+
+p {
+    margin-bottom: 1rem;
+}

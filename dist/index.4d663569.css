@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #e5e5e5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#field {
+  border: 1px solid #000;
+  display: grid;
+}
+
+#field div {
+  border: 1px solid #000;
+}
+
+.box-colored {
+  background-color: #4c7411;
+}
+
+.next {
+  background-color: #285d8b;
+  animation: blinking 1s ease-in-out infinite;
+}
+
+@keyframes blinking {
+  0% {
+    background-color: #fff;
+  }
+
+  50% {
+    background-color: #285d8b;
+  }
+
+  100% {
+    background-color: #fff;
+  }
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=index.4d663569.css.map */
